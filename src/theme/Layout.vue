@@ -3,7 +3,9 @@
     <app-header></app-header>
     <section class='main-section section'>
       <div class="container content">
-        <category></category>
+        <transition name="fade">
+          <router-view></router-view>
+        </transition>
       </div>
     </section>
     <app-footer></app-footer>
@@ -13,13 +15,11 @@
 <script>
 import AppHeader from './AppHeader.vue'
 import AppFooter from './AppFooter.vue'
-import Category from './Category.vue'
 
 export default {
   components: {
     AppHeader,
-    AppFooter,
-    Category
+    AppFooter
   }
 }
 </script>
