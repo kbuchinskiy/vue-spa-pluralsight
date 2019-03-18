@@ -3,9 +3,7 @@
     <app-header></app-header>
     <section class='main-section section'>
       <div class="container content">
-        <transition name="fade">
           <router-view></router-view>
-        </transition>
       </div>
     </section>
     <app-footer></app-footer>
